@@ -135,7 +135,7 @@ namespace Minesweeper.Tests
             // Assert
             for(int i = 0; i < currentField.GetLength(0); i++) 
                 for(int j = 0; j < currentField.GetLength(1); j++)
-                    Assert.AreEqual(PointState.Close, currentField[i, j]);
+                    Assert.AreEqual(PointState.Close, currentField[i, j], "Point state is not Close");
             
         }
 
