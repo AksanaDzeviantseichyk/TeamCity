@@ -153,7 +153,7 @@ namespace Minesweeper.Tests
             var currentField = gameProcessor.GetCurrentField();
 
             // Assert
-            Assert.AreEqual(PointState.Mine, currentField[row, col]);
+            Assert.AreEqual(PointState.Mine, currentField[row, col], "Point state is not Mine");
             
         }
 
